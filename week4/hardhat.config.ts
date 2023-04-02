@@ -16,14 +16,14 @@ module.exports =  {
     localhost: {
       url: "http://localhost:8545",
     },
-    goerli: {
-      url: "https://goerli.infura.io/v3/" + process.env.INFURA_KEY,
-      accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
-    },
-    bnbtest: {
-      url: process.env.BNBTest_URL || "",
-      accounts: process.env.BNBTest_PRIVATE_KEY !== undefined ? [process.env.BNBTest_PRIVATE_KEY] : [],
-    },
+    // goerli: {
+    //   url: "https://goerli.infura.io/v3/" + process.env.INFURA_KEY,
+    //   accounts: process.env.PRIVATE_KEY !== undefined ? [process.env.PRIVATE_KEY] : [],
+    // },
+    // bnbtest: {
+    //   url: process.env.BNBTest_URL || "",
+    //   accounts: process.env.BNBTest_PRIVATE_KEY !== undefined ? [process.env.BNBTest_PRIVATE_KEY] : [],
+    // },
   }
 };
 

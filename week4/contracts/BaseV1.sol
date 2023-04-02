@@ -1,16 +1,16 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.8.0;
 
-import "./Base.sol";
-contract BaseV1 is Base {
-    
-    string public name;
+contract BaseV1  {
+    uint256 private number;
 
-    function increment() public {
-        setValue(retrieve()+1);
+    //设置number的十倍
+    function setNumber(uint256 _number) public {
+        number = _number*10;
     }
-    function reduce() public {
-        setValue(retrieve()-1);
+
+    // 读取值
+    function getNumber() public view returns (uint256) {
+        return number;
     }
-    
 }
